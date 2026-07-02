@@ -1,0 +1,37 @@
+.fade-in {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 1.2s ease-in-out;
+}
+
+.floating-shapes span {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
+  background: white;
+  animation: float 10s infinite ease-in-out;
+}
+
+.floating-shapes span:nth-child(1) { width: 100px; height: 100px; left: 10%; top: 20%; animation-delay: 0s; }
+.floating-shapes span:nth-child(2) { width: 150px; height: 150px; left: 60%; top: 10%; animation-delay: 2s; }
+.floating-shapes span:nth-child(3) { width: 80px; height: 80px; left: 80%; top: 60%; animation-delay: 4s; }
+.floating-shapes span:nth-child(4) { width: 120px; height: 120px; left: 30%; top: 70%; animation-delay: 6s; }
+.floating-shapes span:nth-child(5) { width: 90px; height: 90px; left: 50%; top: 40%; animation-delay: 8s; }
+
+@keyframes float {
+  0% { transform: translateY(0); opacity: 0.3; }
+  50% { transform: translateY(-30px); opacity: 0.6; }
+  100% { transform: translateY(0); opacity: 0.3; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
