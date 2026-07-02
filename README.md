@@ -1,70 +1,184 @@
-# Getting Started with Create React App
+# 📝 Mood Journal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack Mood Journal web application that enables users to securely record, manage, and track their daily thoughts and emotions. The application provides user authentication, journal management, and a responsive interface for a seamless journaling experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+* 🔐 User Registration and Login
+* 🔒 Secure Authentication
+* 📝 Create Journal Entries
+* ✏️ Edit Existing Entries
+* ❌ Delete Journal Entries
+* 📋 Dashboard to View All Entries
+* 👤 User Profile Management
+* 📱 Responsive User Interface
+* 🎨 Smooth UI Animations
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+### Frontend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* React.js
+* React Router
+* CSS3
 
-### `npm run build`
+### Backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Node.js
+* Express.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Database
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* MongoDB
 
-### `npm run eject`
+### Authentication
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* JSON Web Token (JWT)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📂 Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```text
+Mood-Journal/
+│
+├── Frontend
+│   ├── App.js
+│   ├── Dashboard.jsx
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   ├── AddEntry.jsx
+│   ├── EditEntry.jsx
+│   ├── Profile.jsx
+│   ├── index.js
+│   ├── App.css
+│   └── animations.css
+│
+├── Backend
+│   ├── server.js
+│   ├── db.js
+│   ├── auth.js
+│   ├── authController.js
+│   ├── authMiddleware.js
+│   ├── journalController.js
+│   ├── journalRoutes.js
+│   ├── userRoutes.js
+│   ├── Journal.js
+│   ├── JournalEntry.js
+│   └── User.js
+│
+└── README.md
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⚙️ Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Clone the Repository
 
-### Code Splitting
+```bash
+git clone https://github.com/Nivethitha-A/Mood-Journal.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Navigate to the Project
 
-### Analyzing the Bundle Size
+```bash
+cd Mood-Journal
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Install Dependencies
 
-### Making a Progressive Web App
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Configure Environment Variables
 
-### Advanced Configuration
+Create a `.env` file in the project root and add the required environment variables.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Example:
 
-### Deployment
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Start the Backend
 
-### `npm run build` fails to minify
+```bash
+node server.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Start the Frontend
+
+```bash
+npm start
+```
+
+The application will be available at:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 📸 Screenshots
+
+Add screenshots of the following pages:
+
+* Login
+* Register
+* Dashboard
+* Add Journal Entry
+* Edit Journal Entry
+* Profile
+
+---
+
+## 📌 Future Enhancements
+
+* Mood analytics and charts
+* Calendar view
+* Search journal entries
+* Filter by mood or date
+* Dark mode
+* Image attachments
+* Password reset
+* Email verification
+* Export journal entries as PDF
+
+---
+
+## 📚 Learning Outcomes
+
+This project helped strengthen my understanding of:
+
+* Full-stack web development
+* REST API development
+* JWT authentication
+* CRUD operations
+* MongoDB integration
+* React component architecture
+* Protected routes
+* State management
+* Backend routing and middleware
+
+---
+
+## 👩‍💻 Author
+
+**Nivethitha A**
+
+GitHub: https://github.com/Nivethitha-A
+
+---
+
+## 📄 License
+
+This project is created for educational and portfolio purposes.
